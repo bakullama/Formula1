@@ -12,5 +12,5 @@ positional arguments:
   country     selects country (only applies if option 1 used)
 ```
 
-Install required dependancies with
+Install required dependencies with
 `pip3 install -r requirements.txt`
