@@ -15,14 +15,14 @@ countries = ["australia", "bahrain", "china", "azerbaijan", "spain", "monaco",
 
 def main(dataType, country, raceID):
     if dataType == 0:
-        url = "https://www.formula1.com/en/results.html/2019/drivers.html"
+        url = "https://www.formula1.com/en/results.html/2020/drivers.html"
         headers = ["Position", "First Name", "Last Name", "Nationality", "Car", "Points"]
         waitTime = 30
     elif dataType == 1:
         if country == None:
             print("no country specified")
             exit()
-        url = "https://www.formula1.com/en/results.html/2019/races/{id}/{country}/race-result.html".format(id = raceID, country=country)
+        url = "https://www.formula1.com/en/results.html/2020/races/{id}/{country}/race-result.html".format(id = raceID, country=country)
         headers = ["Position", "Number", "First Name", "Last Name", "Car", "Laps", "Time", "Points"]
         waitTime = 10
     else:
